@@ -28,6 +28,7 @@ DESC
   }
 
   puts "Hello debugging: ${RUBY_VERSION}"
+  puts "Hello debugging: ${RUBY_PLATFORM}"
   if defined?(JRuby)
     puts "Hello debugging: it is true"
     s.add_dependency 'rbtree-jruby', '~> 0.2'
