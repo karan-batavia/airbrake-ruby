@@ -27,9 +27,12 @@ DESC
     'rubygems_mfa_required' => 'true',
   }
 
+  puts "Hello debugging: ${RUBY_VERSION}"
   if defined?(JRuby)
+    puts "Hello debugging: it is true"
     s.add_dependency 'rbtree-jruby', '~> 0.2'
   else
+    puts "Hello debugging: it is false"
     s.add_dependency 'rbtree3', '~> 0.6'
   end
 
